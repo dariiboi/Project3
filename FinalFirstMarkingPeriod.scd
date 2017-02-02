@@ -1,6 +1,5 @@
 
 (
-
 SynthDef.new(\iter, {
 	arg freq = 440,atk = 0.007, rel = 1, amp = 0.7, pan =0;
 	var temp, sig, env;
@@ -23,6 +22,7 @@ x=Pdef(
 		\type, \note,
 		\instrument, \iter,
 		\dur, 0.2,
+		\atk, Pseq([0.007,0.07,0.7,1],inf),
 		\amp, 1,
 		\midinote, Pfunc({a})*Pseq([60,64,69 ,76], inf)-Pfunc({b}),
 	);
@@ -50,7 +50,6 @@ c = 0;
 x.play;
 y.play;
 a= 0.75;
-a= 0.92;
 b = 4;
 c = 0.1;
 
