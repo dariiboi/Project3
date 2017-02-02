@@ -18,5 +18,5 @@ SynthDef.new(\multi, { //this line defines a new synthesizer \multi meaning mult
 }).add;
 )
 
-x = Synth.new(\multi);//to play the sounds first shift return on the .add then shiftreturn  on this line above
+// x = Synth.new(\multi);//to play the sounds first shift return on the .add then shiftreturn  on this line above
 x.free;//shift return here to STOP
